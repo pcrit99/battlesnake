@@ -142,4 +142,4 @@ src/
 
 ## Author
 
-Replace with your name and student number.
+Kriton Panigyris CSY24113.
