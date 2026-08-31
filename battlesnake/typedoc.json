@@ -1,0 +1,9 @@
+{
+  "entryPoints": ["src"],
+  "entryPointStrategy": "expand",
+  "exclude": ["**/__tests__/**"],
+  "out": "docs",
+  "excludePrivate": true,
+  "excludeExternals": true,
+  "readme": "none"
+}
