@@ -123,3 +123,15 @@ describe("findClosestFood tie-break", () => {
   });
 });
 
+
+describe("chooseMove edge case", () => {
+ it("does not throw on a 1x1 board occupied by the snake", () => {
+ const you = makeSnake("you", [{ x: 0, y: 0 }]);
+ const board = makeBoard({ width: 1, height: 1, snakes: [you] });
+ const request = makeRequest({ you, board });
+
+ expect(() => chooseMove(request)).not.toThrow();
+ expect(chooseMove(request)).toBe("up");
+ });
+});
+
